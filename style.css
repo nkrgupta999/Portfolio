@@ -676,6 +676,12 @@ textarea {
 
 
 /* BREAK-POINTS STYLEING */
+@media only screen and (max-width:1440px) {
+
+    .home .profession-container .overlay {
+        border-bottom: 415px solid var(--maincol);
+    }
+}
 @media (max-width:1200px) {
     html {
         font-size: 55%;
