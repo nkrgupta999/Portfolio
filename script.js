@@ -50,11 +50,18 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
 // DARK-LIGHT MODE
 let darkModeIcon = document.querySelector('#darkmode-icon');
 darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
+    const logo = document.getElementById('logo');
+    if (document.body.classList.contains('dark-mode')) {
+        logo.src = 'Images/logo(1).png'; // Path to dark mode logo
+    } else {
+        logo.src = 'Images/logo.png'; // Path to light mode logo
+    }
 };
 // <!-- SCROLL REVEAL -->
 ScrollReveal({
