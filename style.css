@@ -149,10 +149,15 @@ section {
 
 }
 
+/* .home {
+    border: 2px solid red;
+    min-height: 74vh;
+} */
 .home {
     display: flex;
     align-items: center;
     /* background-color: yellow; */
+    /* border: 10px solid blue; */
 }
 
 .home .home-content {
